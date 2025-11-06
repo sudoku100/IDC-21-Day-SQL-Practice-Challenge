@@ -6,7 +6,7 @@ select * from patients order by age desc;
 select * from services_weekly order by week, patients_request desc;
 
 -- 3. Display staff members sorted alphabetically by their names.
-select staff_name from staff order by staff_name;
+select * from staff order by staff_name;
 
 ### Daily Challenge:
 -- Retrieve the top 5 weeks with the highest patient refusals across all services, showing week, service, 
