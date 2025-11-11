@@ -34,4 +34,4 @@ select
     avg(patient_satisfaction) as avg_patient_satisfaction
 from services_weekly
 group by service
-having avg(patient_satisfaction) < 80;
+having avg(patient_satisfaction) < 80 and total_patients_refused > 100
