@@ -60,3 +60,4 @@ select
 from services_weekly
 group by service
 order by avg_satisfaction desc;
+
