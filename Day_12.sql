@@ -22,7 +22,7 @@ select
 		when event != 'none' then 'With Event'
         else 'No Event'
 	end as event_status,
-    count(*) as week_cnt,
+    count(distinct week) as week_cnt,
     round(avg(patient_satisfaction), 1) as avg_patient_satisfaction,
     round(avg(staff_morale), 1) as avg_staff_morale
 from services_weekly
